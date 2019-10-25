@@ -7,4 +7,12 @@ public class Roteador extends DispositivoDeRede implements Roteamento{
     public Porta roteamento(Pacote pacote){
         return portas[0];
     }
+
+    public Porta[] getPortas() {
+        return portas;
+    }
+
+    public ArrayList<Pacote> getBuffers() {
+        return buffers;
+    }
 }
